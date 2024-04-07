@@ -1,0 +1,210 @@
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Heading style */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Logout button style */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Photo upload section */
+.photo-upload {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.choose-file-button,
+textarea,
+button {
+  margin-right: 10px;
+  
+}
+
+.choose-file-button {
+  flex: 1; /* Occupy remaining space */
+}
+
+/* Description textarea style */
+textarea {
+  flex: 2; /* Occupy twice the space of other elements */
+}
+
+/* Post button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Photo grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display four photos in a row */
+  gap: 20px;
+}
+
+/* Photo container */
+.photo-container {
+  position: relative;
+  width: calc(100% - 20px); /* Adjusted width to accommodate gap */
+  padding-bottom: calc(100% - 20px); /* Set padding bottom to create square aspect ratio */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.photo-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 5px;
+}
+
+/* Photo details */
+.photo-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+}
+
+/* Description container */
+.description-container {
+  height: 80px; /* Fixed height for description */
+  overflow: hidden; /* Hide overflow */
+}
+
+.description-container p {
+  margin: 0;
+}
+
+/* Expanded description */
+.description-container p.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Expand button */
+.expand-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.expand-button:hover {
+  background-color: #218838;
+}
+
+/* Collapse button */
+.collapse-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.collapse-button:hover {
+  background-color: #c82333;
+}
+
+/* Photo buttons */
+.photo-buttons button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Photo view */
+.photo-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-view img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+}
+
+.photo-view button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.logout-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
